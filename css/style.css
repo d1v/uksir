@@ -1,0 +1,77 @@
+.name-company {
+  margin: 0;
+  padding: 20px 0;
+  color: #0d8fd9;
+  font-size: 32px;
+  text-align: center;
+}
+
+.menu-container {
+  background-color: #3f3f3f;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-navigation {
+  float: left;
+}
+
+.user-block {
+  float: right;
+}
+
+.main-menu,
+.user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-menu__item,
+.user-menu__item {
+  display: inline-block;
+  padding: 0;
+}
+
+.main-menu__item a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  border-right: 1px solid #212121;
+  font-size: 18px;
+}
+
+.user-menu__item a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  border-left: 1px solid #212121;
+  font-size: 18px;
+}
+
+.user-menu__item .login {
+  position: relative;
+  padding-right: 65px;
+}
+
+.main-menu__item a:hover,
+.user-menu__item a:hover {
+  background-color: #0d8fd9;
+}
+
+.user-menu__item .login::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 45px;
+  height: 20px;
+  background-image: url("../img/key.png");
+}
